@@ -112,3 +112,12 @@ body {
   cursor: pointer;
   background: linear-gradient(90deg, #7e73ff 30%, #07ffd2 70%);
 }
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+.visible {
+  display: block;
+  visibility: visible;
+}
