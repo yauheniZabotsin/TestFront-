@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="item">
+          <div class="item__title">
+            <h2>Возраст</h2>
+            <p><span>1</span>/3</p>
+          </div>
+          <div class="age">
+            <p class="age__current"><span>27</span> лет</p>
+            <input class="age__btn-range" type="range" min="18" max="35" />
+            <div class="age__min-max">
+              <p class="age__min">18 лет</p>
+              <p class="age__max">35 лет</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <h2 class="title">Пол</h2>
+          <div class="gender">
+            <label class="gender-label" for="men"
+              ><input type="radio" name="gender" id="men" class="btn-men" />
+              мужчина</label
+            >
+            <label class="gender-label" for="woman"
+              ><input
+                type="radio"
+                name="gender"
+                id="woman"
+                class="btn-women"
+                checked
+              />
+              женщина</label
+            >
+          </div>
+        </div>
+
+        <div class="wrap__btn"><div class="wrap__btn-next">Далее</div></div>
+      </div>
+    </div>
+
+    <script src="./js/step_1.js"></script>
+  </body>
+</html>
