@@ -152,3 +152,13 @@ body {
   border-radius: 10px;
   resize: none;
 }
+
+.item__input-btn {
+  width: 100%;
+  height: 67px;
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+  padding: 20px;
+  font-weight: 400;
+  font-size: 20px;
+}
