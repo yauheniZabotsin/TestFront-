@@ -111,13 +111,15 @@ body {
   width: 272px;
   height: 70px;
   border-radius: 100px;
-  background: linear-gradient(90deg, #4333ff 30%, #07ffd2 70%);
   text-align: center;
 
   color: #353535;
   font-size: 24px;
+  font-weight: 700;
   padding-top: 20px;
   padding-bottom: 20px;
+
+  border: 2px solid #07ffd2;
 }
 
 .wrap__btn-next {
@@ -135,6 +137,11 @@ body {
 .wrap__btn-next:hover {
   cursor: pointer;
   background: linear-gradient(90deg, #7e73ff 30%, #07ffd2 70%);
+}
+
+.wrap__btn-break:hover {
+  cursor: pointer;
+  background: #ffffff86;
 }
 
 .message {
