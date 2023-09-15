@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/dropdown.css" />
     <title>Forms</title>
   </head>
   <body>
     <div class="wrapper">
-      <div class="container">
+      <div class="container hidden">
         <div class="item">
           <div class="item__title">
             <h2>Возраст</h2>
@@ -46,8 +47,47 @@
 
         <div class="wrap__btn"><div class="wrap__btn-next">Далее</div></div>
       </div>
+
+      <div class="container">
+        <div class="item">
+          <div class="item__title">
+            <h2>Город</h2>
+            <p><span>2</span>/3</p>
+          </div>
+          <div class="form-group">
+            <div class="dropdown">
+              <button class="dropdown__button">Минск</button>
+              <ul class="dropdown__list">
+                <li class="dropdown__list-item" data-value="Minsk">Минск</li>
+                <li class="dropdown__list-item" data-value="Grodno">Гродно</li>
+                <li class="dropdown__list-item" data-value="Vitebsk">
+                  Витебск
+                </li>
+                <li class="dropdown__list-item" data-value="Mogilev">
+                  Могилев
+                </li>
+                <li class="dropdown__list-item" data-value="Gomel">Гомель</li>
+                <li class="dropdown__list-item" data-value="Brest">Брест</li>
+              </ul>
+              <input
+                type="text"
+                name="select-category"
+                value=""
+                class="dropdown__input-hidden"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <h2 class="title">Сообщение</h2>
+        </div>
+
+        <div class="wrap__btn"><div class="wrap__btn-next">Далее</div></div>
+      </div>
     </div>
 
     <script src="./js/index.js"></script>
+    <script src="./js/dropdown.js"></script>
   </body>
 </html>
