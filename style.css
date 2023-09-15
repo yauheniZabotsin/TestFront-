@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  max-width: 100%;
 }
 
 body {
@@ -39,9 +40,15 @@ body {
 .container {
   background-color: #ffffff;
   border-radius: 60px;
-  width: 1160px;
+  max-width: 1160px;
   padding: 100px 160px;
   margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 786px;
+  }
 }
 
 .item {
