@@ -22,7 +22,8 @@
 
 /* Checked */
 .checkbox-other input[type="checkbox"]:checked {
-  background-image: url(/checkbox-2.png);
+  background-image: url("./assets/svg/checkbox-checked.png");
+  border: 0;
 }
 
 /* Focus */
