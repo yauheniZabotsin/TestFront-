@@ -1,0 +1,51 @@
+.checkbox-other {
+  display: block;
+  margin: 0 0 10px 0;
+  line-height: 22px;
+  cursor: pointer;
+}
+.checkbox-other input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin: 0 5px 0 0;
+  border: 1px solid #07ffd2;
+  padding: 0;
+  vertical-align: top;
+  outline: none;
+  background: url("./assets/svg/checkbox.svg") center center no-repeat;
+
+  cursor: pointer;
+}
+
+/* Checked */
+.checkbox-other input[type="checkbox"]:checked {
+  background-image: url(/checkbox-2.png);
+}
+
+/* Focus */
+.focused input[type="checkbox"] {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Hover */
+.checkbox-other input[type="checkbox"]:hover {
+  filter: brightness(110%);
+}
+
+/* Active */
+.checkbox-other input[type="checkbox"]:active {
+  filter: brightness(80%);
+}
+
+/* Disabled */
+.checkbox-other input[type="checkbox"]:disabled {
+  color: #666;
+  cursor: default;
+}
+.checkbox-other input[type="checkbox"]:disabled {
+  filter: grayscale(100%);
+  opacity: 0.6;
+}
