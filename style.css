@@ -6,6 +6,10 @@
 
 body {
   background-image: url("./assets/png/fon.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .hidden {
@@ -96,7 +100,7 @@ body {
 }
 
 .gender-label {
-  margin-right: 90px;
+  margin-right: 80px;
   cursor: pointer;
 }
 
