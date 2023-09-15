@@ -104,12 +104,27 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  column-gap: 30px;
 }
-.wrap__btn-next {
+
+.wrap__btn-break {
   width: 272px;
   height: 70px;
   border-radius: 100px;
   background: linear-gradient(90deg, #4333ff 30%, #07ffd2 70%);
+  text-align: center;
+
+  color: #353535;
+  font-size: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.wrap__btn-next {
+  width: 272px;
+  height: 70px;
+  border-radius: 100px;
+  background: linear-gradient(275deg, #4333ff 30%, #07ffd2 70%);
   text-align: center;
   color: #ffffff;
   font-size: 24px;
