@@ -122,41 +122,11 @@ body {
   background: linear-gradient(90deg, #7e73ff 30%, #07ffd2 70%);
 }
 
-.cities {
-  font-size: 16px;
-  font-weight: 400;
-  color: #353535;
-  padding: 20px 25px;
+.message {
   width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-  margin: 0;
-  border: 1px solid #e3e3e3;
-  box-shadow: 0 1px 0 1px rgba(132, 132, 132, 0.1);
+  height: 140px;
+  padding: 15px 20px;
+  border: 1px solid #848484;
   border-radius: 10px;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: #fff;
-  background-image: url("./assets/svg/option.svg"),
-    linear-gradient(to bottom, #f3f7ff 0%, #ffffff 100%);
-  background-repeat: no-repeat, repeat;
-  background-position: right 0.7em top 50%, 0 0;
-  background-size: 0.65em auto, 100%;
-}
-
-.cities::-ms-expand {
-  display: none;
-}
-.cities:hover {
-  cursor: pointer;
-}
-.cities:active,
-.cities:focus {
-  background-image: url("./assets/svg/option_up.svg"),
-    linear-gradient(to bottom, #f3f7ff 0%, #ffffff 100%);
-  background-repeat: no-repeat, repeat;
-  background-position: right 0.7em top 50%, 0 0;
-  background-size: 0.65em auto, 100%;
-  border: 0;
+  resize: none;
 }
