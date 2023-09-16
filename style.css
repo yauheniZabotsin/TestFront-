@@ -236,3 +236,10 @@ body {
     row-gap: 15px;
   }
 }
+
+.message:invalid {
+  border: 2px dashed red;
+}
+.item__input-btn:invalid {
+  border: 2px solid red;
+}
