@@ -28,3 +28,34 @@ breakBtn.forEach((el) =>
     pages[page].classList.remove("hidden");
   })
 );
+
+const popupLink = document.querySelector(".popup-link");
+const popup = document.querySelector(".popup");
+const popupBody = document.querySelector(".popup-body");
+const popupBtn = document.querySelector(".popup-close");
+
+console.log(popupBody);
+
+popupLink.addEventListener("click", (event) => {
+  popup.classList.add("open");
+  body.classList.add("fixed");
+  // if(event.target.closest(".testimonials-card")){}
+});
+popupBtn.addEventListener("click", () => {
+  popup.classList.remove("open");
+  body.classList.remove("fixed");
+});
+popupBody.addEventListener("click", popupClose);
+
+function popupClose(e) {
+  if (!e.target.closest(".popup-content")) {
+    popup.classList.toggle("open");
+  }
+  pages.forEach((el, i) => {
+    if (i === 0) {
+      el.classList.remove("hidden");
+    } else {
+      el.classList.add("hidden");
+    }
+  });
+}

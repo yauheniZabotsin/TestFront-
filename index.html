@@ -3,9 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./dropdown.css" />
     <link rel="stylesheet" href="./checkbox-other.css" />
+    <link rel="stylesheet" href="./popap.css" />
     <title>Forms</title>
   </head>
   <body>
@@ -127,7 +132,18 @@
 
         <div class="wrap__btn" id="2">
           <div class="wrap__btn-break">Назад</div>
-          <button class="wrap__btn-form" disabled>Отправить задание</button>
+          <button class="wrap__btn-form popup-link">Отправить задание</button>
+        </div>
+      </div>
+      <div class="popup" id="popup">
+        <div class="popup-body">
+          <div class="popup-content">
+            <div class="popup-content__image-ok">
+              <img src="./assets/svg/ok.svg" alt="ok" />
+            </div>
+            <p class="popup-content__title">Ваша заявка успешно отправлена!</p>
+            <div class="popup-close">Закрыть</div>
+          </div>
         </div>
       </div>
     </div>
