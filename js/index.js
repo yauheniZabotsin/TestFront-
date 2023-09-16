@@ -12,9 +12,11 @@ const pages = document.querySelectorAll(".container");
 nextBtn.forEach((el) =>
   el.addEventListener("click", (e) => {
     let page = e.target.closest(".wrap__btn").id;
-    pages[page].classList.add("hidden");
-    page++;
-    pages[page].classList.remove("hidden");
+    if (page != 2) {
+      pages[page].classList.add("hidden");
+      page++;
+      pages[page].classList.remove("hidden");
+    }
   })
 );
 
