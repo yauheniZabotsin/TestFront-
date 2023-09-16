@@ -51,14 +51,14 @@ body {
 }
 .item__title {
   width: 841px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
 }
 
 .title {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .item__title span {
@@ -136,12 +136,15 @@ body {
   width: 272px;
   height: 70px;
   border-radius: 100px;
-  background: linear-gradient(275deg, #4333ff 30%, #07ffd2 70%);
+  background: linear-gradient(275deg, #b2abff 30%, #51ffe0 70%);
   text-align: center;
   color: #ffffff;
   font-size: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.wrap__btn-next-active {
+  background: linear-gradient(275deg, #4333ff 30%, #07ffd2 70%);
 }
 
 .wrap__btn-next:hover {
@@ -160,6 +163,7 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   cursor: pointer;
+  border: 0;
 }
 
 .form-active {
@@ -240,6 +244,20 @@ body {
 .message:invalid {
   border: 2px dashed red;
 }
-.item__input-btn:invalid {
+.message:valid {
+  border: 2px dashed green;
+}
+
+.isValid {
+  border: 2px solid green;
+}
+
+.item__input-btn:invalid,
+.notValid {
   border: 2px solid red;
+}
+.validator-name,
+.vaalidator-tel {
+  color: red;
+  padding-bottom: 5px;
 }

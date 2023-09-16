@@ -52,7 +52,7 @@
         </div>
 
         <div class="wrap__btn" id="0">
-          <div class="wrap__btn-next">Далее</div>
+          <div class="wrap__btn-next wrap__btn-next-active">Далее</div>
         </div>
       </div>
 
@@ -100,27 +100,31 @@
 
         <div class="wrap__btn" id="1">
           <div class="wrap__btn-break">Назад</div>
-          <div class="wrap__btn-next">Далее</div>
+          <button disabled class="wrap__btn-next" id="mess">Далее</и>
         </div>
+      </form>
       </div>
 
       <div class="container hidden">
+        <form>
         <div class="item">
           <div class="item__title">
             <h2>Имя</h2>
             <p><span>3</span>/3</p>
           </div>
-          <input required class="item__input-btn name" type="text" />
+          <p class="validator-name"></p>
+          <input required class="item__input-btn btn-name" type="text" id="name"/>
         </div>
 
         <div class="item">
           <h2 class="title">Телефон</h2>
-          <input
+          <p class="vaalidator-tel">Введите номер телефона</p>
+          <!-- <input
             required
             class="item__input-btn"
             type="tel"
             placeholder="+375 (_ _) _ _ _ - _ _ - _ _"
-          />
+          /> -->
         </div>
 
         <div class="item">
@@ -132,9 +136,10 @@
 
         <div class="wrap__btn" id="2">
           <div class="wrap__btn-break">Назад</div>
-          <button class="wrap__btn-form popup-link">Отправить задание</button>
+          <input type="submit" class="wrap__btn-next popup-link" disabled value="Отправить заявку"></input>
         </div>
       </div>
+      </form>
       <div class="popup" id="popup">
         <div class="popup-body">
           <div class="popup-content">
