@@ -38,7 +38,6 @@ const body = document.body;
 popupLink.addEventListener("click", (event) => {
   popup.classList.add("open");
   body.classList.add("fixed");
-  // if(event.target.closest(".testimonials-card")){}
 });
 popupBtn.addEventListener("click", () => {
   popup.classList.remove("open");
@@ -59,3 +58,19 @@ function popupClose(e) {
     }
   });
 }
+const checkbox = document.querySelector("input[type='checkbox']");
+
+checkbox.onchange = function () {
+  const [...inputVal] = document.querySelectorAll(".item__input-btn");
+  const step1 = inputVal
+    .map((element) => element.classList.contains("isValid"))
+    .every((e) => e === true);
+
+  if (step1 && checkbox.checked) {
+    popupLink.disabled = true;
+    popupLink.classList.remove("wrap__btn-next-active");
+  } else {
+    popupLink.disabled = false;
+    popupLink.classList.add("wrap__btn-next-active");
+  }
+};
