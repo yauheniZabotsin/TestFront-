@@ -10,11 +10,13 @@ popupLink.addEventListener("click", (event) => {
   preloader.classList.remove("hidden");
   popupLink.disabled = true;
   popupLink.classList.remove("wrap__btn-next-active");
+  popupLink.style = "padding-left: 25px;";
 
   setTimeout(() => {
     popup.classList.add("open");
     body.classList.add("fixed");
     preloader.classList.add("hidden");
+    popupLink.style = "";
   }, 3000);
 });
 
