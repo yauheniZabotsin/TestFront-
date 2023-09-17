@@ -3,16 +3,26 @@ const popupLink = document.querySelector(".popup-link");
 const popup = document.querySelector(".popup");
 const popupBody = document.querySelector(".popup-body");
 const popupBtn = document.querySelector(".popup-close");
+const preloader = document.querySelector(".preloader");
 const body = document.body;
 
 popupLink.addEventListener("click", (event) => {
-  popup.classList.add("open");
-  body.classList.add("fixed");
+  preloader.classList.remove("hidden");
+  popupLink.disabled = true;
+  popupLink.classList.remove("wrap__btn-next-active");
+
+  setTimeout(() => {
+    popup.classList.add("open");
+    body.classList.add("fixed");
+    preloader.classList.add("hidden");
+  }, 3000);
 });
+
 popupBtn.addEventListener("click", () => {
   popup.classList.remove("open");
   body.classList.remove("fixed");
 });
+
 popupBody.addEventListener("click", popupClose);
 
 function popupClose(e) {
