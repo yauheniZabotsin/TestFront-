@@ -220,7 +220,7 @@ body {
   }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 694px) {
   .container {
     max-width: 100%;
     padding: 40px 15px;
