@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/dropdown.css" />
     <link rel="stylesheet" href="./css/checkbox-other.css" />
+    <link rel="stylesheet" href="./css/custom-radio.css" />
     <link rel="stylesheet" href="./css/popap.css" />
     <link rel="stylesheet" href="./css/validator.css" />
     <title>Forms</title>
@@ -34,21 +35,19 @@
 
         <div class="item">
           <h2 class="title">Пол</h2>
+
           <div class="gender">
-            <label class="gender-label" for="men"
-              ><input type="radio" name="gender" id="men" class="btn-men" />
-              мужчина</label
-            >
-            <label class="gender-label" for="woman"
-              ><input
-                type="radio"
-                name="gender"
-                id="woman"
-                class="btn-women"
-                checked
-              />
-              женщина</label
-            >
+
+            <div class="form_radio">   
+              <input type="radio" name="gender" id="men" class="btn-men" checked/>
+              <label class="gender-label" for="men"> мужчина</label>
+            </div>
+
+            <div class="form_radio">   
+              <input type="radio" name="gender" id="woman" class="btn-women"/>
+              <label class="gender-label" for="woman"> женщина</label>
+            </div>
+            
           </div>
         </div>
 
