@@ -257,7 +257,11 @@ body {
   border: 2px solid red;
 }
 .validator-name,
-.vaalidator-tel {
+.validator-tel {
   color: red;
   padding-bottom: 5px;
+}
+.invalid-phone {
+  outline-color: red;
+  border: 2px solid red;
 }

@@ -118,13 +118,17 @@
 
         <div class="item">
           <h2 class="title">Телефон</h2>
-          <p class="vaalidator-tel">Введите номер телефона</p>
-          <!-- <input
+          <p id="phone-label" class="validator-tel">Введите номер телефона</p>
+          <input
             required
+            id="phone-number"
+            name="phone"
+            value="+375-(__)-___ -__ -__"
             class="item__input-btn"
             type="tel"
-            placeholder="+375 (_ _) _ _ _ - _ _ - _ _"
-          /> -->
+            placeholder="+375-(__)-___ -__ -__"
+            mask="+375-(__)-___ -__ -__"
+          />
         </div>
 
         <div class="item">
@@ -155,5 +159,7 @@
 
     <script src="./js/index.js"></script>
     <script src="./js/dropdown.js"></script>
+    <script src="./lib/phonemask.min.js"></script>
+    <script src="./js/validation/phone.js"></script>
   </body>
 </html>
