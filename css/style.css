@@ -209,8 +209,10 @@ body {
   .wrap__btn-break {
     width: 219px;
     height: 56px;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    font-size: 20px;
+    /* padding-top: 13px;
+    padding-bottom: 13px; */
+    padding: 13px 45px;
   }
   .wrap__btn-form {
     width: 273px;
@@ -231,8 +233,10 @@ body {
   .wrap__btn-form {
     width: 229px;
     height: 44px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    font-size: 16px;
+    /* padding-top: 6px;
+    padding-bottom: 6px; */
+    padding: 13px 40px;
   }
 
   .wrap__btn {

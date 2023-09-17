@@ -108,7 +108,7 @@ body.fixed {
   height: 40px;
   z-index: 11;
   position: relative;
-  top: 10px;
+  top: 11px;
   animation: preloader-rotate 2s infinite linear;
 }
 
