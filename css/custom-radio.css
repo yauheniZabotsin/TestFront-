@@ -1,5 +1,6 @@
 .form_radio {
   margin-bottom: 10px;
+  font-size: 24px;
 }
 .form_radio input[type="radio"] {
   display: none;

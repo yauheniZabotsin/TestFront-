@@ -59,16 +59,23 @@ body {
 
 .title {
   margin-bottom: 15px;
+  font-size: 32px;
+}
+
+.item__title p {
+  font-size: 24px;
 }
 
 .item__title span {
   color: #3d46fa;
+  font-size: 24px;
 }
 
 .age__current {
   width: 80px;
   margin: 0 auto;
   font-weight: 700;
+  font-size: 24px;
 }
 
 .age__btn-range {
@@ -99,6 +106,7 @@ body {
 .age__min-max {
   display: flex;
   justify-content: space-between;
+  font-size: 24px;
 }
 
 .gender {
