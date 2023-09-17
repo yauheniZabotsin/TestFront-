@@ -1,0 +1,25 @@
+.message:invalid {
+  border: 2px dashed red;
+}
+.message:valid {
+  border: 2px dashed green;
+}
+
+.isValid {
+  border: 2px solid green;
+}
+
+.validator-name,
+.validator-tel {
+  color: red;
+  padding-bottom: 5px;
+}
+.invalid-phone {
+  outline-color: red;
+  border: 2px solid red;
+}
+
+.item__input-btn:invalid,
+.notValid {
+  border: 2px solid red;
+}
