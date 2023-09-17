@@ -62,15 +62,15 @@ const checkbox = document.querySelector("input[type='checkbox']");
 
 checkbox.onchange = function () {
   const [...inputVal] = document.querySelectorAll(".item__input-btn");
-  const step1 = inputVal
+  const validInp = inputVal
     .map((element) => element.classList.contains("isValid"))
     .every((e) => e === true);
 
-  if (step1 && checkbox.checked) {
-    popupLink.disabled = true;
-    popupLink.classList.remove("wrap__btn-next-active");
-  } else {
+  if (validInp && !checkbox.checked) {
     popupLink.disabled = false;
     popupLink.classList.add("wrap__btn-next-active");
+  } else {
+    popupLink.disabled = true;
+    popupLink.classList.remove("wrap__btn-next-active");
   }
 };
