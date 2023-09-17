@@ -252,10 +252,6 @@ body {
   border: 2px solid green;
 }
 
-.item__input-btn:invalid,
-.notValid {
-  border: 2px solid red;
-}
 .validator-name,
 .validator-tel {
   color: red;
@@ -263,5 +259,10 @@ body {
 }
 .invalid-phone {
   outline-color: red;
+  border: 2px solid red;
+}
+
+.item__input-btn:invalid,
+.notValid {
   border: 2px solid red;
 }
